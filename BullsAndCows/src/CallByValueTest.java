@@ -11,9 +11,9 @@ public class CallByValueTest {
 		int a = 10;
 		int b = 20;
 		
-		System.out.println("swap() 메소드 호출 전: "+ a +", "+ b);
+		System.out.println("swap() 메소드 호출 전: "+ a +", "+ b); // 10, 20
 		swap(a, b);
-		System.out.println("swap() 메소드 호출 후: "+ a +", "+ b);
+		System.out.println("swap() 메소드 호출 후: "+ a +", "+ b); // 10, 20
 	}
 
 }
