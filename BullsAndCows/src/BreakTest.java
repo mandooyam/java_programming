@@ -5,7 +5,7 @@ public class BreakTest {
 		int i, j;
 		
 		i = 10;
-		OUT_WHILE: while(true){
+		OUT_WHILE: while(true){ // OUT_WHILE: 레이블
 			j=0;
 			while(true){
 				System.out.print("*");
