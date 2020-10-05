@@ -1,4 +1,5 @@
 import java.awt.FlowLayout;
+import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -50,15 +51,18 @@ public class Test2 extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==b1) {
-			img = new JLabel(icon);
-			this.add(img);
-			this.setVisible(true); //화면에 보이기
+			temp=im;
+			repaint();
 		}
 		else if(e.getSource()==b2) {
-			img = new JLabel(icon2);
-			this.add(img);
-			this.setVisible(true); //화면에 보이기
+			temp=im2;
+			repaint();
 		}
+	}
+	
+	public void paint(Graphics g) {
+		super.paint(g);
+		g.drawImage(temp, 30, 100, this);
 	}
 	
 }
